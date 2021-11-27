@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuário</title>
+</head>
+
+<body>
+    <div class="login-box">
+        <div class="title">
+
+            <h2>Cadastro Paciente</h2>
+        </div>
+        <form>
+
+            <div class="user-box">
+                <input type="text" title="Número do Prontuário" required>
+                <label>Número Prontuário</label>
+            </div>
+
+            <p></p>
+
+            <div class="user-box">
+                <input type="text" title="Nome do Paciente" required>
+                <label>Nome</label>
+            </div>
+            _
+
+            <div class="user-box">
+                <input type="text" title="Sobrenome do Paciente" required>
+                <label>Sobrenome</label>
+            </div>
+
+
+
+            <div>
+                <form class="has-success">
+                    <select name="select-simples" class="ls-select">
+                        <option value="GE">Gênero</option>
+                        <option value="FM">Feminino</option>
+                        <option value="MAS">Masculino</option>
+                    </select>
+                </form>
+            </div>
+
+            <br>
+
+
+            <div>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </div>
+
+            <br>
+
+            <div class="user-box">
+                <input id="cpf" type="number" maxlength="11" title="CPF" required />
+                <label>CPF</label>
+            </div>
+
+            _
+
+            <div class="user-box">
+                <input id="rg" type="number" maxlength="9" title="rg" required />
+                <label>RG</label>
+            </div>
+
+
+            <div>
+                <select id="UF" name="UF">
+                    <option value="">Selecione</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+          </div>
+
+            <br>
+
+            <div class="user-box">
+                <input type="email" name="email" required>
+                <label>e-mail</label>
+            </div>
+
+            <p></p>
+
+            <div class="user-box">
+                <input type="number" maxlength="11" id="celular" required>
+                <label for="celular">Celular</label>
+            </div>
+
+            _
+
+            <div class="user-box">
+                <input type="number" maxlength="10" id="telefonefixo" required>
+                <label for="telefone">Telefone Fixo</label>
+            </div>
+
+            <p></p>
+
+            <div class="user-box">
+                <input type="text" title="Convênio" required>
+                <label>Convênio</label>
+            </div>
+
+            _
+
+            <div class="user-box">
+                <input type="number" maxlength="17" title="Carteirinha do Convênio" required />
+                <label>Carteirinha Convênio</label>
+            </div>
+
+            <p></p>
+
+            <div class="user-box">
+                <input type="month" title="Validade da Carteirinha" required />
+                <label>Validade</label>
+            </div>
+
+            <p></p>
+
+
+            <a href="https://codepen.io/ahmed-massoud/pen/gOxmXpp" target="_blank">
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </a>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;378&family=Source+Sans+Pro:ital@1&family=Zen+Antique&display=swap');
+
+*{
+  padding:0px;
+  margin:0px;
+}                                
+html {
+  height: 100%;
+}
+body {
+  font-family: 'Red Hat Mono', monospace;
+           
+}
+
+.login-box {
+  position:absolute ;
+  top: 80%;
+  left: 50%;
+  padding: 100px;
+  transform: translate(-50%, -50%);
+  background: rgb(18, 32, 32);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box .title{
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color:rgb(38, 142, 197);
+  margin: -10px -64px 60px;
+  height:50px;
+  box-shadow :2px 3px 10px 2px black;
+  border-radius:15px;
+  border-bottom-left-radius:0px;
+  margin-right:0px;
+}
+
+.login-box .title::before{
+  content:"" ;
+  position:absolute;
+  left:0px;
+  bottom:-24px;
+  border-width:12px;
+  border-color: rgb(0, 45, 90) rgb(0, 45, 90) transparent transparent;
+  border-style:solid;
+  
+}
+.login-box .title .look {
+  position:relative;
+  margin-left:25px;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  display:inline-block;
+  background-color:rgb(0,85,130);
+  padding:5px;
+  
+}
+
+.login-box .title .look::after {
+  content:"";
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background-color:rgb(0,70,90);
+  z-index:-1;
+  box-shadow :2px 3px 10px 2px black;
+}
+
+.login-box .title .look img{
+  position:relative;
+  width:100%;
+  height:100%;
+
+}
+.login-box .title h2 {
+  vertical-align:middle;
+    display:inline-block;
+  color: #fff;
+  margin-left:23%;
+ font-size: 18px;
+  text-transform: capitalize;
+}
+
+.login-box .user-box{
+  position: relative;
+  display: inline-block;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+  text-transform: capitalize;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #0ff;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+}
+
+.login-box a:hover {
+  background: #0ff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 10px #0ff;
+}
+
+.login-box a:hover input{
+  color: #fff;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0ff);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #0ff);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #0ff);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #0ff);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+.login-box a input {
+  border:0px;
+  width: 100%;
+  height: 100%;
+  background-color:transparent;
+  letter-spacing: 4px;
+  padding: 10px 20px;
+  text-shadow:0px 0px 5px #0ff; 
+  color: #0ff;
+  transition: .5s;
+  text-transform: uppercase;
+}
+@media (max-height: 400px) {
+        .login-box{
+            top:0px;
+          transform: translatex(-50%);
+        }
+}
+@media (max-width: 300px) {
+        .login-box{
+            left:30px;
+          transform:translatey(-50%);
+        }
+}
+@media (max-width: 300px) and (max-height: 400px){
+
+        .login-box{
+
+            left:30px;
+
+          top:0px;
+
+          transform:translatex(0%);
+
+        }
+        
+    
+
+}
+
